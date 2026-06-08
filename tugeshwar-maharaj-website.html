@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tugeshwar Maharaj — Divine Avatar Video</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════
+   DESIGN SYSTEM — Deep Saffron Meets Gold
+   ═══════════════════════════════════════════ */
+:root {
+  --saffron:    #C8500A;
+  --saffron2:   #E8650F;
+  --gold:       #C4922A;
+  --gold-light: #F0C060;
+  --cream:      #FAF4E8;
+  --cream2:     #F3E8CC;
+  --parchment:  #EDD9A3;
+  --ink:        #1A1008;
+  --ink2:       #3D2408;
+  --muted:      #7A5C3A;
+  --border:     rgba(196,146,42,0.25);
+  --border2:    rgba(196,146,42,0.5);
+  --white:      #FFFFFF;
+  --success:    #2D7A3C;
+  --radius:     4px;
+  --radius2:    2px;
+  --shadow:     0 2px 20px rgba(26,16,8,0.08);
+  --shadow2:    0 8px 40px rgba(26,16,8,0.12);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ── Noise texture overlay ── */
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none; z-index: 0;
+}
+
+/* ── Decorative top border ── */
+.top-border {
+  height: 3px;
+  background: linear-gradient(90deg, var(--saffron), var(--gold-light), var(--gold), var(--gold-light), var(--saffron));
+  position: relative; z-index: 10;
+}
+
+/* ═══ NAV ═══════════════════════════════════════════════════ */
+nav {
+  background: rgba(250,244,232,0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border2);
+  padding: 0 2rem;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px;
+  position: sticky; top: 0; z-index: 100;
+}
+
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.45rem; font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+  display: flex; align-items: center; gap: 10px;
+}
+.nav-logo .om {
+  font-size: 1.1rem;
+  color: var(--saffron);
+  opacity: 0.8;
+}
+.nav-logo strong { color: var(--saffron); }
+
+.nav-tag {
+  font-size: 11px; font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid var(--border2);
+  padding: 4px 10px; border-radius: 20px;
+  background: rgba(196,146,42,0.06);
+}
+
+/* ═══ HERO ═══════════════════════════════════════════════════ */
+.hero {
+  background: linear-gradient(160deg, #1A0E04 0%, #2D1A06 40%, #3D2408 100%);
+  position: relative; overflow: hidden;
+  padding: 5rem 2rem 4rem;
+  text-align: center;
+}
+
+.hero-pattern {
+  position: absolute; inset: 0;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(200,80,10,0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 50%, rgba(196,146,42,0.12) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.hero-om {
+  font-size: 5rem;
+  opacity: 0.08;
+  position: absolute; top: 2rem; right: 3rem;
+  line-height: 1;
+  user-select: none;
+}
+
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(196,146,42,0.15);
+  border: 1px solid rgba(196,146,42,0.3);
+  color: var(--gold-light);
+  font-size: 11px; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 5px 14px; border-radius: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  font-weight: 700; font-style: italic;
+  color: var(--white);
+  line-height: 1.05;
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.01em;
+}
+.hero h1 em {
+  font-style: normal;
+  background: linear-gradient(135deg, var(--gold-light), var(--parchment));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; font-style: italic;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.02em;
+}
+
+.hero-divider {
+  width: 60px; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 0 auto 2.5rem;
+}
+
+.hero-stats {
+  display: inline-flex; gap: 3rem; flex-wrap: wrap; justify-content: center;
+}
+.hero-stat {
+  text-align: center;
+}
+.hero-stat strong {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem; font-weight: 700;
+  color: var(--gold-light);
+  display: block; line-height: 1;
+}
+.hero-stat span {
+  font-size: 11px; color: rgba(255,255,255,0.4);
+  text-transform: uppercase; letter-spacing: 0.1em;
+  margin-top: 4px; display: block;
+}
+
+/* ═══ MAIN LAYOUT ════════════════════════════════════════════ */
+.main-wrap {
+  max-width: 960px; margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+  position: relative; z-index: 1;
+}
+
+/* Step label */
+.step-label {
+  font-size: 10px; font-weight: 600;
+  color: var(--saffron);
+  letter-spacing: 0.15em; text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+/* Section headings */
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.55rem; font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+  line-height: 1.2;
+}
+.section-desc {
+  font-size: 13px; color: var(--muted);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+/* Panel */
+.panel {
+  background: var(--white);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin-bottom: 1.25rem;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+.panel::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--saffron), var(--gold));
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.panel:focus-within::before,
+.panel.active::before { opacity: 1; }
+
+/* ═══ STEP 1 — UPLOAD ═══════════════════════════════════════ */
+.upload-area {
+  border: 1.5px dashed var(--border2);
+  border-radius: var(--radius);
+  background: var(--cream);
+  padding: 3rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+.upload-area:hover {
+  border-color: var(--saffron);
+  background: rgba(200,80,10,0.03);
+}
+.upload-area.has-image {
+  padding: 0;
+  border-style: solid;
+  border-color: var(--gold);
+}
+.upload-area.dragging {
+  border-color: var(--saffron);
+  background: rgba(200,80,10,0.05);
+}
+
+.upload-icon { font-size: 2.5rem; margin-bottom: 0.75rem; opacity: 0.6; }
+.upload-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem; font-weight: 600;
+  color: var(--ink2); margin-bottom: 0.4rem;
+}
+.upload-hint { font-size: 12px; color: var(--muted); }
+
+#preview-img {
+  width: 100%; max-height: 300px;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 1px);
+  display: none;
+}
+
+.img-actions {
+  display: none;
+  position: absolute; inset: 0;
+  background: rgba(26,16,8,0.6);
+  align-items: center; justify-content: center; gap: 10px;
+  border-radius: calc(var(--radius) - 1px);
+}
+.upload-area.has-image:hover .img-actions { display: flex; }
+.img-action-btn {
+  background: white; color: var(--ink);
+  border: none; padding: 8px 18px;
+  border-radius: 2px; font-family: 'Inter', sans-serif;
+  font-size: 12px; font-weight: 600; cursor: pointer;
+  transition: background 0.2s;
+}
+.img-action-btn:hover { background: var(--cream); }
+.img-action-btn.danger { background: #fee; color: #c00; }
+
+.upload-success {
+  display: none; margin-top: 1rem;
+  align-items: center; gap: 8px;
+  padding: 10px 14px;
+  background: rgba(45,122,60,0.06);
+  border: 1px solid rgba(45,122,60,0.2);
+  border-radius: var(--radius2);
+  font-size: 13px; color: var(--success); font-weight: 500;
+}
+.upload-success.show { display: flex; }
+
+#file-input { display: none; }
+
+/* ═══ STEP 2 — SCRIPT ════════════════════════════════════════ */
+.script-box {
+  width: 100%;
+  background: var(--cream);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius2);
+  color: var(--ink);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  padding: 1rem 1.2rem;
+  resize: vertical;
+  min-height: 140px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.script-box:focus {
+  border-color: var(--saffron);
+  background: white;
+}
+.script-meta {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 0.6rem;
+}
+.script-count { font-size: 11px; color: var(--muted); }
+
+.script-prefills {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  margin-bottom: 1rem;
+}
+.prefill-btn {
+  font-size: 11px; font-weight: 500;
+  padding: 5px 12px; border-radius: 20px;
+  border: 1px solid var(--border2);
+  background: white;
+  color: var(--muted);
+  cursor: pointer; transition: all 0.18s;
+  font-family: 'Inter', sans-serif;
+}
+.prefill-btn:hover {
+  border-color: var(--saffron);
+  color: var(--saffron);
+  background: rgba(200,80,10,0.04);
+}
+
+/* ═══ STEP 3 — LANGUAGE ══════════════════════════════════════ */
+.lang-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 8px;
+}
+.lang-btn {
+  background: white;
+  border: 1px solid var(--border2);
+  border-radius: var(--radius2);
+  padding: 10px 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.18s;
+  color: var(--muted);
+  font-size: 11px; font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.lang-btn .flag { font-size: 1.3rem; display: block; margin-bottom: 4px; }
+.lang-btn:hover { border-color: var(--gold); color: var(--ink2); }
+.lang-btn.sel {
+  background: linear-gradient(135deg, var(--saffron), var(--saffron2));
+  border-color: var(--saffron);
+  color: white;
+  box-shadow: 0 2px 8px rgba(200,80,10,0.25);
+}
+
+/* ═══ GENERATE BUTTON ════════════════════════════════════════ */
+.generate-wrap {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.gen-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: linear-gradient(135deg, var(--saffron), var(--saffron2));
+  color: white; border: none;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; font-weight: 700;
+  padding: 1rem 3rem;
+  border-radius: var(--radius2);
+  cursor: pointer;
+  transition: all 0.25s;
+  letter-spacing: 0.04em;
+  box-shadow: 0 4px 20px rgba(200,80,10,0.3);
+  position: relative; overflow: hidden;
+}
+.gen-btn::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, transparent, rgba(255,255,255,0.1));
+  opacity: 0; transition: opacity 0.2s;
+}
+.gen-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(200,80,10,0.4); }
+.gen-btn:hover::before { opacity: 1; }
+.gen-btn:active { transform: translateY(0); }
+.gen-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; box-shadow: none; }
+
+.gen-note {
+  font-size: 11px; color: var(--muted);
+  margin-top: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+/* ═══ PROGRESS ════════════════════════════════════════════════ */
+.progress-panel {
+  display: none;
+  background: var(--white);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: var(--shadow);
+}
+.progress-panel.show { display: block; }
+
+.prog-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; font-weight: 600;
+  color: var(--ink); margin-bottom: 1.25rem;
+  display: flex; align-items: center; gap: 10px;
+}
+
+.prog-bar-track {
+  background: var(--cream2);
+  border-radius: 20px;
+  height: 4px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+.prog-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--saffron), var(--gold));
+  border-radius: 20px;
+  width: 0%;
+  transition: width 0.6s ease;
+}
+
+.prog-steps { display: flex; flex-direction: column; gap: 10px; }
+.prog-step {
+  display: flex; align-items: center; gap: 12px;
+  font-size: 13px; color: var(--muted);
+  transition: color 0.3s;
+}
+.prog-step-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--cream2); flex-shrink: 0;
+  transition: all 0.3s;
+}
+.prog-step.active { color: var(--saffron); font-weight: 500; }
+.prog-step.active .prog-step-dot {
+  background: var(--saffron);
+  box-shadow: 0 0 0 3px rgba(200,80,10,0.15);
+  animation: pulse 1.4s ease infinite;
+}
+.prog-step.done { color: var(--success); }
+.prog-step.done .prog-step-dot { background: var(--success); }
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(200,80,10,0.15); }
+  50% { box-shadow: 0 0 0 6px rgba(200,80,10,0.06); }
+}
+
+/* ═══ RESULT ══════════════════════════════════════════════════ */
+.result-panel {
+  display: none;
+  background: var(--white);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: var(--shadow2);
+}
+.result-panel.show { display: block; }
+
+.result-header {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem; font-weight: 700;
+  color: var(--ink); margin-bottom: 1.5rem;
+  display: flex; align-items: center; gap: 10px;
+}
+
+.video-player {
+  width: 100%;
+  border-radius: var(--radius2);
+  border: 1px solid var(--border2);
+  margin-bottom: 1.5rem;
+  background: var(--ink);
+  min-height: 280px;
+  display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+}
+.video-player video {
+  width: 100%;
+  border-radius: var(--radius2);
+  display: block;
+}
+.video-placeholder {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 8px;
+  color: rgba(255,255,255,0.4);
+  font-size: 13px;
+}
+.video-placeholder .spinner {
+  width: 32px; height: 32px;
+  border: 2px solid rgba(255,255,255,0.1);
+  border-top-color: var(--gold-light);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-bottom: 6px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.download-btn {
+  display: flex; align-items: center; justify-content: space-between;
+  width: 100%;
+  background: linear-gradient(135deg, var(--saffron), var(--saffron2));
+  color: white; border: none;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem; font-weight: 700;
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius2);
+  cursor: pointer; text-decoration: none;
+  transition: all 0.2s;
+  letter-spacing: 0.03em;
+  box-shadow: 0 4px 16px rgba(200,80,10,0.3);
+  margin-bottom: 0.75rem;
+}
+.download-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(200,80,10,0.4); }
+.download-btn span { font-size: 12px; opacity: 0.8; font-style: italic; font-family: 'Inter', sans-serif; font-weight: 400; }
+
+.result-actions {
+  display: flex; gap: 10px; margin-top: 1rem;
+}
+.action-btn {
+  flex: 1; padding: 0.75rem;
+  background: white;
+  border: 1px solid var(--border2);
+  border-radius: var(--radius2);
+  font-family: 'Inter', sans-serif;
+  font-size: 13px; font-weight: 500;
+  color: var(--ink2); cursor: pointer;
+  transition: all 0.18s;
+}
+.action-btn:hover { border-color: var(--saffron); color: var(--saffron); }
+
+/* ═══ ERROR ══════════════════════════════════════════════════ */
+.error-box {
+  display: none;
+  background: #fff8f8;
+  border: 1px solid rgba(180,0,0,0.15);
+  border-radius: var(--radius2);
+  padding: 12px 16px;
+  font-size: 13px; color: #8B0000;
+  margin-top: 1rem;
+}
+.error-box.show { display: block; }
+
+/* ═══ DIVIDER ════════════════════════════════════════════════ */
+.ornament-divider {
+  text-align: center;
+  color: var(--gold);
+  font-size: 1.2rem;
+  opacity: 0.5;
+  margin: 0.5rem 0 1.5rem;
+  letter-spacing: 0.5em;
+}
+
+/* ═══ TOAST ══════════════════════════════════════════════════ */
+#toast {
+  position: fixed; bottom: 2rem; right: 2rem;
+  background: var(--ink);
+  color: rgba(255,255,255,0.9);
+  border-radius: var(--radius2);
+  padding: 12px 20px;
+  font-size: 13px; font-weight: 500;
+  transform: translateY(60px); opacity: 0;
+  transition: all 0.3s cubic-bezier(0.34,1.56,0.64,1);
+  z-index: 999;
+  border-left: 3px solid var(--gold);
+  max-width: 320px;
+}
+#toast.show { transform: translateY(0); opacity: 1; }
+
+/* ═══ FOOTER ══════════════════════════════════════════════════ */
+footer {
+  background: var(--ink);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  color: rgba(255,255,255,0.3);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  border-top: 1px solid rgba(196,146,42,0.15);
+}
+footer .footer-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem; font-weight: 600;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 0.5rem;
+}
+
+/* ═══ RESPONSIVE ═════════════════════════════════════════════ */
+@media (max-width: 600px) {
+  .hero { padding: 3.5rem 1.25rem 3rem; }
+  .hero-stats { gap: 1.75rem; }
+  .main-wrap { padding: 2rem 1rem 4rem; }
+  .panel { padding: 1.5rem; }
+  .gen-btn { padding: 0.9rem 2rem; font-size: 1.1rem; }
+  nav { padding: 0 1.25rem; }
+}
+
+/* ═══ ANIMATIONS ON LOAD ════════════════════════════════════ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.panel { animation: fadeUp 0.4s ease both; }
+.panel:nth-child(1) { animation-delay: 0.05s; }
+.panel:nth-child(2) { animation-delay: 0.12s; }
+.panel:nth-child(3) { animation-delay: 0.18s; }
+</style>
+</head>
+<body>
+
+<div class="top-border"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <span class="om">🕉️</span>
+    <span><strong>Tugeshwar</strong> Maharaj</span>
+  </div>
+  <span class="nav-tag">Divine Avatar · Free</span>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-pattern"></div>
+  <div class="hero-om">🕉️</div>
+
+  <div class="hero-badge">✦ AI-Powered Spiritual Avatar</div>
+  <h1><em>Tugeshwar Maharaj</em></h1>
+  <p class="hero-sub">Generate divine talking avatar videos in any language</p>
+  <div class="hero-divider"></div>
+
+  <div class="hero-stats">
+    <div class="hero-stat"><strong>12+</strong><span>Languages</span></div>
+    <div class="hero-stat"><strong>Free</strong><span>Always</span></div>
+    <div class="hero-stat"><strong>HD</strong><span>Quality</span></div>
+    <div class="hero-stat"><strong>3 Steps</strong><span>Simple</span></div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="main-wrap">
+
+  <!-- STEP 1 — UPLOAD -->
+  <div class="panel active">
+    <div class="step-label">Step 01</div>
+    <div class="section-title">Upload Portrait</div>
+    <p class="section-desc">A clear, front-facing photo works best for animation.</p>
+
+    <div class="upload-area" id="upload-area"
+         onclick="document.getElementById('file-input').click()"
+         ondragover="handleDragOver(event)"
+         ondrop="handleDrop(event)"
+         ondragleave="handleDragLeave(event)">
+      <div id="upload-placeholder">
+        <div class="upload-icon">🙏</div>
+        <div class="upload-title">Drop a portrait or click to browse</div>
+        <div class="upload-hint">JPG · PNG · WEBP · Max 10 MB</div>
+      </div>
+      <img id="preview-img" alt="Portrait preview" />
+      <div class="img-actions">
+        <button class="img-action-btn" onclick="event.stopPropagation(); document.getElementById('file-input').click()">Change Photo</button>
+        <button class="img-action-btn danger" onclick="event.stopPropagation(); clearPhoto()">Remove</button>
+      </div>
+    </div>
+    <input type="file" id="file-input" accept="image/*" onchange="handleFileSelect(event)">
+
+    <div class="upload-success" id="upload-success">
+      <span>✓</span> Photo uploaded successfully — ready to animate
+    </div>
+  </div>
+
+  <div class="ornament-divider">✦ ✦ ✦</div>
+
+  <!-- STEP 2 — SCRIPT -->
+  <div class="panel">
+    <div class="step-label">Step 02</div>
+    <div class="section-title">Write the Script</div>
+    <p class="section-desc">What should the Maharaj say? Write in any language — we translate automatically.</p>
+
+    <!-- Quick prefills -->
+    <div class="script-prefills">
+      <button class="prefill-btn" onclick="prefill('satsang')">🙏 Satsang</button>
+      <button class="prefill-btn" onclick="prefill('mantra')">🕉️ Mantra</button>
+      <button class="prefill-btn" onclick="prefill('meditation')">🧘 Meditation</button>
+      <button class="prefill-btn" onclick="prefill('karma')">⚖️ Karma</button>
+      <button class="prefill-btn" onclick="prefill('bhakti')">💛 Bhakti</button>
+      <button class="prefill-btn" onclick="prefill('jeevan')">✨ Jeevan</button>
+    </div>
+
+    <textarea class="script-box" id="script" placeholder="Jai Shri Ram! Aaj ke is pavitra satsang mein aap sabka swagat hai…" oninput="updateWordCount()">Jai Shri Ram! Aaj ke is pavitra satsang mein aap sabka swagat hai. Ishwar ki kirpa se hum aaj yahan ikattha hue hain. Jab hum ek saath Ishwar ka naam lete hain, to ek adbhut shakti ka anubhav hota hai. Prabhu ka naam hi sabse bada sahara hai.</textarea>
+    <div class="script-meta">
+      <span class="script-count" id="word-count">~32 words · ~15 sec</span>
+    </div>
+  </div>
+
+  <div class="ornament-divider">✦ ✦ ✦</div>
+
+  <!-- STEP 3 — LANGUAGE -->
+  <div class="panel">
+    <div class="step-label">Step 03</div>
+    <div class="section-title">Select Language</div>
+    <p class="section-desc">Choose one language for your video. The script will be translated automatically.</p>
+
+    <div class="lang-grid">
+      <div class="lang-btn sel" data-lang="hi" data-code="hi" onclick="selectLang(this)">
+        <span class="flag">🇮🇳</span>Hindi
+      </div>
+      <div class="lang-btn" data-lang="English" data-code="en" onclick="selectLang(this)">
+        <span class="flag">🇺🇸</span>English
+      </div>
+      <div class="lang-btn" data-lang="Marathi" data-code="mr" onclick="selectLang(this)">
+        <span class="flag">🇮🇳</span>Marathi
+      </div>
+      <div class="lang-btn" data-lang="Bengali" data-code="bn" onclick="selectLang(this)">
+        <span class="flag">🇧🇩</span>Bengali
+      </div>
+      <div class="lang-btn" data-lang="Tamil" data-code="ta" onclick="selectLang(this)">
+        <span class="flag">🇮🇳</span>Tamil
+      </div>
+      <div class="lang-btn" data-lang="Telugu" data-code="te" onclick="selectLang(this)">
+        <span class="flag">🇮🇳</span>Telugu
+      </div>
+      <div class="lang-btn" data-lang="Gujarati" data-code="gu" onclick="selectLang(this)">
+        <span class="flag">🇮🇳</span>Gujarati
+      </div>
+      <div class="lang-btn" data-lang="Punjabi" data-code="pa" onclick="selectLang(this)">
+        <span class="flag">🇮🇳</span>Punjabi
+      </div>
+      <div class="lang-btn" data-lang="Spanish" data-code="es" onclick="selectLang(this)">
+        <span class="flag">🇪🇸</span>Spanish
+      </div>
+      <div class="lang-btn" data-lang="Arabic" data-code="ar" onclick="selectLang(this)">
+        <span class="flag">🇸🇦</span>Arabic
+      </div>
+      <div class="lang-btn" data-lang="French" data-code="fr" onclick="selectLang(this)">
+        <span class="flag">🇫🇷</span>French
+      </div>
+      <div class="lang-btn" data-lang="Chinese" data-code="zh" onclick="selectLang(this)">
+        <span class="flag">🇨🇳</span>Chinese
+      </div>
+    </div>
+  </div>
+
+  <!-- GENERATE -->
+  <div class="generate-wrap">
+    <div class="error-box" id="error-box"></div>
+    <button class="gen-btn" id="gen-btn" onclick="startGenerate()">
+      🕉️ &nbsp; Generate Avatar Video
+    </button>
+    <div class="gen-note">Free · Powered by D-ID · ~2 min processing</div>
+  </div>
+
+  <!-- PROGRESS PANEL -->
+  <div class="progress-panel" id="progress-panel">
+    <div class="prog-title">⏳ Generating your divine video…</div>
+    <div class="prog-bar-track"><div class="prog-bar-fill" id="prog-bar"></div></div>
+    <div class="prog-steps">
+      <div class="prog-step" id="ps-upload"><div class="prog-step-dot"></div>Uploading portrait to server</div>
+      <div class="prog-step" id="ps-translate"><div class="prog-step-dot"></div>Translating script via MyMemory</div>
+      <div class="prog-step" id="ps-did"><div class="prog-step-dot"></div>Sending to D-ID for animation</div>
+      <div class="prog-step" id="ps-render"><div class="prog-step-dot"></div>Rendering lips & voice sync</div>
+      <div class="prog-step" id="ps-ready"><div class="prog-step-dot"></div>Video ready — preparing download</div>
+    </div>
+  </div>
+
+  <!-- RESULT PANEL -->
+  <div class="result-panel" id="result-panel">
+    <div class="result-header">✦ Your Video is Ready</div>
+
+    <div class="video-player" id="video-player">
+      <div class="video-placeholder" id="video-placeholder">
+        <div class="spinner"></div>
+        <span>Preparing video…</span>
+      </div>
+    </div>
+
+    <a class="download-btn" id="download-btn" href="#" download="tugeshwar-maharaj-video.mp4">
+      <span>⬇ &nbsp; Download Video (MP4)</span>
+      <span>Free · Full HD</span>
+    </a>
+
+    <div class="result-actions">
+      <button class="action-btn" onclick="shareVideo()">📤 Share</button>
+      <button class="action-btn" onclick="resetAll()">↺ Make Another</button>
+    </div>
+  </div>
+
+</div><!-- /main-wrap -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">🕉️ Tugeshwar Maharaj</div>
+  <div>Divine Avatar Video Generator · Free · Powered by D-ID & MyMemory</div>
+</footer>
+
+<div id="toast"></div>
+
+<!-- ═══════════════════════════════════════════
+     JAVASCRIPT
+     ═══════════════════════════════════════════ -->
+<script>
+// ── State ─────────────────────────────────────────────────────
+const API = ''; // empty = same origin; set to 'http://localhost:3000' if opening file directly
+
+let photoFile   = null;
+let photoDataURL = null;
+let selectedLang = { lang: 'Hindi', code: 'hi' };
+let currentJobId = null;
+let pollTimer    = null;
+
+// ── Prefill Scripts ────────────────────────────────────────────
+const SCRIPTS = {
+  satsang:   'Jai Shri Ram! Aaj ke is pavitra satsang mein aap sabka swagat hai. Ishwar ki kirpa se hum aaj yahan ikattha hue hain. Prabhu ka naam hi sabse bada sahara hai. Hare Krishna, Hare Ram!',
+  mantra:    'Om Namah Shivaya — yeh panch akshar ki maha-mantra hain. Har akshar mein ek tattva chhupa hai. Rozana subah aur sham is mantra ka jaap karein. Shiva ki kripa aap par bani rahe. Om Namah Shivaya.',
+  meditation:'Aankhen band karein. Gehri sans lein. Apni saans par dhyan lagaein — andar… aur bahar. Har saans ke saath tension chhod dein. Prabhu ki roshni ko apne andar aate huye mehsoos karein.',
+  karma:     'Karma ka niyam kehta hai — jo bote ho woh kaatoge. Nek kaam karo, nek vichar rakho. Dusron ki seva mein hi Ishwar ka darshan hota hai. Aaj koi ek kaam zaroor karein jo doosron ke liye ho.',
+  bhakti:    'Bhakti ek marg hai jo seedha Ishwar tak jaata hai. Bas ek pyar bhari pukaar — Prabhu, main tumhara hoon! Meera ne bhi isi raaste Krishn ko paya. Aap bhi paa sakte hain.',
+  jeevan:    'Jeevan ek anmol uphaar hai. Har din ek naya mauka hai sahi kaam karne ka. Sirf aaj, sirf abhi aapka hai. Is pal ko poori shakti se jiyen!'
+};
+
+function prefill(key) {
+  document.getElementById('script').value = SCRIPTS[key];
+  updateWordCount();
+  toast('Script filled — feel free to edit it');
+}
+
+// ── Word Count ─────────────────────────────────────────────────
+function updateWordCount() {
+  const text = document.getElementById('script').value.trim();
+  const words = text ? text.split(/\s+/).length : 0;
+  const secs  = Math.max(8, Math.round(words * 0.45));
+  const m = Math.floor(secs / 60), s = secs % 60;
+  const dur = m > 0 ? `${m}m ${s}s` : `~${s}s`;
+  document.getElementById('word-count').textContent = `~${words} words · ${dur} video`;
+}
+
+// ── File Upload ────────────────────────────────────────────────
+function handleFileSelect(e) {
+  const file = e.target.files[0];
+  if (file) processFile(file);
+}
+function handleDragOver(e) {
+  e.preventDefault();
+  document.getElementById('upload-area').classList.add('dragging');
+}
+function handleDragLeave() {
+  document.getElementById('upload-area').classList.remove('dragging');
+}
+function handleDrop(e) {
+  e.preventDefault();
+  document.getElementById('upload-area').classList.remove('dragging');
+  const file = e.dataTransfer.files[0];
+  if (file && file.type.startsWith('image/')) processFile(file);
+  else toast('⚠️ Please drop an image file');
+}
+
+function processFile(file) {
+  if (file.size > 10 * 1024 * 1024) { toast('⚠️ File too large. Max 10 MB.'); return; }
+  photoFile = file;
+  const reader = new FileReader();
+  reader.onload = ev => {
+    photoDataURL = ev.target.result;
+    document.getElementById('preview-img').src = photoDataURL;
+    document.getElementById('preview-img').style.display = 'block';
+    document.getElementById('upload-placeholder').style.display = 'none';
+    document.getElementById('upload-area').classList.add('has-image');
+    document.getElementById('upload-success').classList.add('show');
+  };
+  reader.readAsDataURL(file);
+}
+
+function clearPhoto() {
+  photoFile = null; photoDataURL = null;
+  document.getElementById('preview-img').src = '';
+  document.getElementById('preview-img').style.display = 'none';
+  document.getElementById('upload-placeholder').style.display = 'block';
+  document.getElementById('upload-area').classList.remove('has-image');
+  document.getElementById('upload-success').classList.remove('show');
+  document.getElementById('file-input').value = '';
+}
+
+// ── Language Selection ─────────────────────────────────────────
+function selectLang(el) {
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('sel'));
+  el.classList.add('sel');
+  selectedLang = { lang: el.dataset.lang, code: el.dataset.code };
+}
+
+// ── Validation ─────────────────────────────────────────────────
+function showError(msg) {
+  const box = document.getElementById('error-box');
+  box.textContent = msg; box.classList.add('show');
+  setTimeout(() => box.classList.remove('show'), 4000);
+}
+
+// ── Progress helpers ───────────────────────────────────────────
+function setStep(stepId, state) {
+  const el = document.getElementById(stepId);
+  el.classList.remove('active', 'done');
+  if (state) el.classList.add(state);
+}
+function setBar(pct) {
+  document.getElementById('prog-bar').style.width = pct + '%';
+}
+
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+// ── MAIN GENERATE FLOW ─────────────────────────────────────────
+async function startGenerate() {
+  // Validate
+  if (!photoFile && !photoDataURL) { showError('⚠️ Please upload a portrait photo first.'); return; }
+  const script = document.getElementById('script').value.trim();
+  if (!script) { showError('⚠️ Please write a script.'); return; }
+
+  // UI
+  document.getElementById('gen-btn').disabled = true;
+  document.getElementById('progress-panel').classList.add('show');
+  document.getElementById('result-panel').classList.remove('show');
+  document.getElementById('error-box').classList.remove('show');
+  setBar(0);
+  ['ps-upload','ps-translate','ps-did','ps-render','ps-ready'].forEach(id => setStep(id, ''));
+
+  try {
+    // ── Step 1: Upload photo ──────────────────────────────────
+    setStep('ps-upload', 'active'); setBar(10);
+    let photoUrl;
+
+    if (API) {
+      // Upload to backend
+      const fd = new FormData();
+      fd.append('photo', photoFile);
+      const upResp = await fetch(`${API}/api/upload`, { method: 'POST', body: fd });
+      if (!upResp.ok) throw new Error('Photo upload failed');
+      const upData = await upResp.json();
+      photoUrl = upData.url;
+    } else {
+      // Fallback: use data URL directly (works without backend for D-ID)
+      photoUrl = photoDataURL;
+    }
+    setStep('ps-upload', 'done'); setBar(22);
+
+    // ── Step 2: Translate ─────────────────────────────────────
+    setStep('ps-translate', 'active'); setBar(30);
+    let finalScript = script;
+    if (selectedLang.code !== 'en') {
+      try {
+        const trResp = API
+          ? await fetch(`${API}/api/translate`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ text: script, targetLang: selectedLang.code })
+            })
+          : await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(script.slice(0,500))}&langpair=en|${selectedLang.code}`);
+
+        if (trResp.ok) {
+          const trData = await trResp.json();
+          // Handle both backend response and direct MyMemory response
+          finalScript = trData.translated || trData?.responseData?.translatedText || script;
+        }
+      } catch (e) {
+        console.warn('Translation skipped:', e.message);
+      }
+    }
+    setStep('ps-translate', 'done'); setBar(45);
+
+    // ── Step 3: D-ID Generate ─────────────────────────────────
+    setStep('ps-did', 'active'); setBar(55);
+
+    const didApiKey = window.DID_API_KEY || prompt(
+      '🔑 Enter your FREE D-ID API key\n\n' +
+      '1. Go to https://studio.d-id.com\n' +
+      '2. Sign up free (Google login works)\n' +
+      '3. Go to Profile → API → Copy key\n\n' +
+      'You get 14 free videos per month!'
+    );
+
+    if (!didApiKey) throw new Error('D-ID API key is required. Get a free key at studio.d-id.com');
+    window.DID_API_KEY = didApiKey; // remember for session
+
+    // Voice map
+    const voiceMap = {
+      hi:'hi-IN-MadhurNeural', en:'en-US-GuyNeural', ta:'ta-IN-ValluvarNeural',
+      te:'te-IN-MohanNeural', mr:'mr-IN-ManoharNeural', bn:'bn-IN-BashkarNeural',
+      gu:'gu-IN-NiranjanNeural', pa:'pa-IN-OjasNeural', es:'es-ES-AlvaroNeural',
+      ar:'ar-SA-HamedNeural', fr:'fr-FR-HenriNeural', zh:'zh-CN-YunxiNeural'
+    };
+    const voiceId = voiceMap[selectedLang.code] || 'hi-IN-MadhurNeural';
+
+    let jobId;
+    if (API) {
+      // Use backend (recommended)
+      const genResp = await fetch(`${API}/api/generate`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ photoUrl, script: finalScript, language: selectedLang.code })
+      });
+      if (!genResp.ok) {
+        const errData = await genResp.json();
+        throw new Error(errData.error || 'Video generation failed');
+      }
+      const genData = await genResp.json();
+      jobId = genData.jobId;
+    } else {
+      // Direct D-ID call from browser
+      const didResp = await fetch('https://api.d-id.com/talks', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Basic ${btoa(didApiKey + ':')}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          source_url: photoUrl,
+          script: {
+            type: 'text',
+            input: finalScript,
+            provider: { type: 'microsoft', voice_id: voiceId }
+          },
+          config: { fluent: true, pad_audio: 0 }
+        })
+      });
+      if (!didResp.ok) {
+        const err = await didResp.json();
+        throw new Error(err?.description || 'D-ID generation failed. Check your API key.');
+      }
+      const didData = await didResp.json();
+      jobId = didData.id;
+    }
+
+    currentJobId = jobId;
+    setStep('ps-did', 'done'); setBar(65);
+
+    // ── Step 4: Poll for result ───────────────────────────────
+    setStep('ps-render', 'active');
+    const videoUrl = await pollForVideo(jobId, didApiKey);
+    setStep('ps-render', 'done'); setBar(90);
+
+    // ── Step 5: Show result ───────────────────────────────────
+    setStep('ps-ready', 'active');
+    await sleep(600);
+    setStep('ps-ready', 'done'); setBar(100);
+
+    showResult(videoUrl);
+
+  } catch (err) {
+    console.error(err);
+    showError('❌ ' + err.message);
+    document.getElementById('gen-btn').disabled = false;
+    toast('Something went wrong — see error above');
+  }
+}
+
+// ── Poll D-ID for completed video ─────────────────────────────
+async function pollForVideo(jobId, didApiKey) {
+  const maxAttempts = 40; // ~2 min
+  for (let i = 0; i < maxAttempts; i++) {
+    await sleep(3000);
+
+    let status, videoUrl;
+
+    if (API) {
+      const resp = await fetch(`${API}/api/status/${jobId}`);
+      const data = await resp.json();
+      status   = data.status;
+      videoUrl = data.videoUrl;
+    } else {
+      const resp = await fetch(`https://api.d-id.com/talks/${jobId}`, {
+        headers: { 'Authorization': `Basic ${btoa(didApiKey + ':')}` }
+      });
+      const data = await resp.json();
+      status   = data.status;
+      videoUrl = data.result_url;
+    }
+
+    if (status === 'done' && videoUrl) return videoUrl;
+    if (status === 'error') throw new Error('D-ID video rendering failed. Please try again.');
+
+    // Update bar as we wait
+    setBar(65 + Math.min(20, i * 0.6));
+  }
+  throw new Error('Video generation timed out. Please try again.');
+}
+
+// ── Show Result ────────────────────────────────────────────────
+function showResult(videoUrl) {
+  document.getElementById('progress-panel').classList.remove('show');
+  document.getElementById('result-panel').classList.add('show');
+  document.getElementById('gen-btn').disabled = false;
+
+  const player = document.getElementById('video-player');
+  player.innerHTML = `<video controls autoplay src="${videoUrl}" style="width:100%;border-radius:3px;display:block;"></video>`;
+
+  const dlBtn = document.getElementById('download-btn');
+  dlBtn.href = videoUrl;
+  dlBtn.setAttribute('download', 'tugeshwar-maharaj-video.mp4');
+
+  toast('🎉 Video ready! Download it below.');
+  player.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+// ── Share ──────────────────────────────────────────────────────
+function shareVideo() {
+  if (navigator.share) {
+    navigator.share({ title: 'Tugeshwar Maharaj', text: 'Watch this divine avatar video!', url: window.location.href });
+  } else {
+    navigator.clipboard.writeText(window.location.href);
+    toast('🔗 Link copied to clipboard!');
+  }
+}
+
+// ── Reset ──────────────────────────────────────────────────────
+function resetAll() {
+  document.getElementById('result-panel').classList.remove('show');
+  document.getElementById('progress-panel').classList.remove('show');
+  document.getElementById('prog-bar').style.width = '0%';
+  ['ps-upload','ps-translate','ps-did','ps-render','ps-ready'].forEach(id => setStep(id, ''));
+  document.getElementById('gen-btn').disabled = false;
+  currentJobId = null;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ── Toast ──────────────────────────────────────────────────────
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(window._toastT);
+  window._toastT = setTimeout(() => t.classList.remove('show'), 3000);
+}
+
+// Init word count
+updateWordCount();
+</script>
+</body>
+</html>
