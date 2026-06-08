@@ -1,17 +1,25 @@
 {
   "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "api/*.js",
-      "use": "@vercel/node"
+      "source": "/api/generate",
+      "destination": "/generate.js"
     },
     {
-      "src": "public/**",
-      "use": "@vercel/static"
+      "source": "/api/translate",
+      "destination": "/translate.js"
+    },
+    {
+      "source": "/api/status",
+      "destination": "/status.js"
+    },
+    {
+      "source": "/api/upload",
+      "destination": "/upload.js"
+    },
+    {
+      "source": "/",
+      "destination": "/index.html"
     }
-  ],
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/(.*)", "dest": "/public/$1" }
   ]
 }
