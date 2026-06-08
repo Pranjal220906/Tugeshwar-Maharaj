@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tugeshwar Maharaj — Divine Avatar Video</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --saffron:    #C8500A;
+  --saffron2:   #E8650F;
+  --gold:       #C4922A;
+  --gold-light: #F0C060;
+  --cream:      #FAF4E8;
+  --cream2:     #F3E8CC;
+  --parchment:  #EDD9A3;
+  --ink:        #1A1008;
+  --ink2:       #3D2408;
+  --muted:      #7A5C3A;
+  --border:     rgba(196,146,42,0.25);
+  --border2:    rgba(196,146,42,0.5);
+  --white:      #FFFFFF;
+  --success:    #2D7A3C;
+  --radius:     4px;
+  --radius2:    2px;
+  --shadow:     0 2px 20px rgba(26,16,8,0.08);
+  --shadow2:    0 8px 40px rgba(26,16,8,0.12);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.top-border {
+  height: 3px;
+  background: linear-gradient(90deg, var(--saffron), var(--gold-light), var(--gold), var(--gold-light), var(--saffron));
+}
+nav {
+  background: rgba(250,244,232,0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border2);
+  padding: 0 2rem;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px;
+  position: sticky; top: 0; z-index: 100;
+}
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.45rem; font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+  display: flex; align-items: center; gap: 10px;
+}
+.nav-logo .om { font-size: 1.1rem; color: var(--saffron); opacity: 0.8; }
+.nav-logo strong { color: var(--saffron); }
+.nav-tag {
+  font-size: 11px; font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  border: 1px solid var(--border2);
+  padding: 4px 10px; border-radius: 20px;
+  background: rgba(196,146,42,0.06);
+}
+.hero {
+  background: linear-gradient(160deg, #1A0E04 0%, #2D1A06 40%, #3D2408 100%);
+  position: relative; overflow: hidden;
+  padding: 5rem 2rem 4rem;
+  text-align: center;
+}
+.hero-pattern {
+  position: absolute; inset: 0;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(200,80,10,0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 50%, rgba(196,146,42,0.12) 0%, transparent 60%);
+  pointer-events: none;
+}
+.hero-om {
+  font-size: 5rem; opacity: 0.08;
+  position: absolute; top: 2rem; right: 3rem;
+  line-height: 1; user-select: none;
+}
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(196,146,42,0.15);
+  border: 1px solid rgba(196,146,42,0.3);
+  color: var(--gold-light);
+  font-size: 11px; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 5px 14px; border-radius: 20px;
+  margin-bottom: 1.5rem;
+}
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  font-weight: 700; font-style: italic;
+  color: var(--white);
+  line-height: 1.05; margin-bottom: 0.4rem;
+  letter-spacing: -0.01em;
+}
+.hero h1 em {
+  font-style: normal;
+  background: linear-gradient(135deg, var(--gold-light), var(--parchment));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; font-style: italic;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 2.5rem; letter-spacing: 0.02em;
+}
+.hero-divider {
+  width: 60px; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 0 auto 2.5rem;
+}
+.hero-stats { display: inline-flex; gap: 3rem; flex-wrap: wrap; justify-content: center; }
+.hero-stat { text-align: center; }
+.hero-stat strong {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem; font-weight: 700;
+  color: var(--gold-light); display: block; line-height: 1;
+}
+.hero-stat span {
+  font-size: 11px; color: rgba(255,255,255,0.4);
+  text-transform: uppercase; letter-spacing: 0.1em;
+  margin-top: 4px; display: block;
+}
+.main-wrap {
+  max-width: 960px; margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+  position: relative; z-index: 1;
+}
+.step-label {
+  font-size: 10px; font-weight: 600;
+  color: var(--saffron);
+  letter-spacing: 0.15em; text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.55rem; font-weight: 600;
+  color: var(--ink); margin-bottom: 0.25rem; line-height: 1.2;
+}
+.section-desc { font-size: 13px; color: var(--muted); margin-bottom: 1.5rem; line-height: 1.5; }
+.panel {
+  background: var(--white);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius);
+  padding: 2rem; margin-bottom: 1.25rem;
+  box-shadow: var(--shadow); position: relative; overflow: hidden;
+}
+.panel::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--saffron), var(--gold));
+  opacity: 0; transition: opacity 0.3s;
+}
+.panel:focus-within::before, .panel.active::before { opacity: 1; }
+
+/* Upload */
+.upload-area {
+  border: 1.5px dashed var(--border2);
+  border-radius: var(--radius);
+  background: var(--cream);
+  padding: 3rem 2rem; text-align: center;
+  cursor: pointer; transition: all 0.25s;
+  position: relative; overflow: hidden;
+}
+.upload-area:hover { border-color: var(--saffron); background: rgba(200,80,10,0.03); }
+.upload-area.has-image { padding: 0; border-style: solid; border-color: var(--gold); }
+.upload-area.dragging { border-color: var(--saffron); background: rgba(200,80,10,0.05); }
+.upload-icon { font-size: 2.5rem; margin-bottom: 0.75rem; opacity: 0.6; }
+.upload-title { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 600; color: var(--ink2); margin-bottom: 0.4rem; }
+.upload-hint { font-size: 12px; color: var(--muted); }
+#preview-img { width: 100%; max-height: 300px; object-fit: cover; border-radius: calc(var(--radius) - 1px); display: none; }
+.img-actions {
+  display: none; position: absolute; inset: 0;
+  background: rgba(26,16,8,0.6);
+  align-items: center; justify-content: center; gap: 10px;
+  border-radius: calc(var(--radius) - 1px);
+}
+.upload-area.has-image:hover .img-actions { display: flex; }
+.img-action-btn {
+  background: white; color: var(--ink); border: none;
+  padding: 8px 18px; border-radius: 2px;
+  font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; cursor: pointer;
+}
+.img-action-btn.danger { background: #fee; color: #c00; }
+.upload-success {
+  display: none; margin-top: 1rem;
+  align-items: center; gap: 8px;
+  padding: 10px 14px;
+  background: rgba(45,122,60,0.06); border: 1px solid rgba(45,122,60,0.2);
+  border-radius: var(--radius2); font-size: 13px; color: var(--success); font-weight: 500;
+}
+.upload-success.show { display: flex; }
+#file-input { display: none; }
+
+/* Script */
+.script-box {
+  width: 100%; background: var(--cream);
+  border: 1px solid var(--border2); border-radius: var(--radius2);
+  color: var(--ink); font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem; line-height: 1.8;
+  padding: 1rem 1.2rem; resize: vertical; min-height: 140px;
+  outline: none; transition: border-color 0.2s;
+}
+.script-box:focus { border-color: var(--saffron); background: white; }
+.script-meta { display: flex; justify-content: space-between; margin-top: 0.6rem; }
+.script-count { font-size: 11px; color: var(--muted); }
+.script-prefills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1rem; }
+.prefill-btn {
+  font-size: 11px; font-weight: 500;
+  padding: 5px 12px; border-radius: 20px;
+  border: 1px solid var(--border2); background: white; color: var(--muted);
+  cursor: pointer; transition: all 0.18s; font-family: 'Inter', sans-serif;
+}
+.prefill-btn:hover { border-color: var(--saffron); color: var(--saffron); }
+
+/* Languages */
+.lang-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 8px; }
+.lang-btn {
+  background: white; border: 1px solid var(--border2); border-radius: var(--radius2);
+  padding: 10px 6px; text-align: center; cursor: pointer; transition: all 0.18s;
+  color: var(--muted); font-size: 11px; font-weight: 500; letter-spacing: 0.02em;
+}
+.lang-btn .flag { font-size: 1.3rem; display: block; margin-bottom: 4px; }
+.lang-btn:hover { border-color: var(--gold); color: var(--ink2); }
+.lang-btn.sel {
+  background: linear-gradient(135deg, var(--saffron), var(--saffron2));
+  border-color: var(--saffron); color: white;
+  box-shadow: 0 2px 8px rgba(200,80,10,0.25);
+}
+
+/* Generate */
+.generate-wrap { margin-top: 2.5rem; text-align: center; }
+.gen-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: linear-gradient(135deg, var(--saffron), var(--saffron2));
+  color: white; border: none;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; font-weight: 700;
+  padding: 1rem 3rem; border-radius: var(--radius2);
+  cursor: pointer; transition: all 0.25s;
+  letter-spacing: 0.04em;
+  box-shadow: 0 4px 20px rgba(200,80,10,0.3);
+}
+.gen-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(200,80,10,0.4); }
+.gen-btn:active { transform: translateY(0); }
+.gen-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; box-shadow: none; }
+.gen-note { font-size: 11px; color: var(--muted); margin-top: 0.75rem; letter-spacing: 0.04em; }
+
+/* Progress */
+.progress-panel {
+  display: none; background: var(--white);
+  border: 1px solid var(--border2); border-radius: var(--radius);
+  padding: 2rem; margin-top: 2rem; box-shadow: var(--shadow);
+}
+.progress-panel.show { display: block; }
+.prog-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; font-weight: 600;
+  color: var(--ink); margin-bottom: 1.25rem;
+}
+.prog-bar-track { background: var(--cream2); border-radius: 20px; height: 4px; overflow: hidden; margin-bottom: 1.5rem; }
+.prog-bar-fill { height: 100%; background: linear-gradient(90deg, var(--saffron), var(--gold)); border-radius: 20px; width: 0%; transition: width 0.6s ease; }
+.prog-steps { display: flex; flex-direction: column; gap: 10px; }
+.prog-step { display: flex; align-items: center; gap: 12px; font-size: 13px; color: var(--muted); transition: color 0.3s; }
+.prog-step-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--cream2); flex-shrink: 0; transition: all 0.3s; }
+.prog-step.active { color: var(--saffron); font-weight: 500; }
+.prog-step.active .prog-step-dot { background: var(--saffron); box-shadow: 0 0 0 3px rgba(200,80,10,0.15); animation: pulse 1.4s ease infinite; }
+.prog-step.done { color: var(--success); }
+.prog-step.done .prog-step-dot { background: var(--success); }
+@keyframes pulse {
+  0%,100% { box-shadow: 0 0 0 3px rgba(200,80,10,0.15); }
+  50% { box-shadow: 0 0 0 6px rgba(200,80,10,0.06); }
+}
+
+/* Result */
+.result-panel {
+  display: none; background: var(--white);
+  border: 1px solid var(--border2); border-radius: var(--radius);
+  padding: 2rem; margin-top: 2rem; box-shadow: var(--shadow2);
+}
+.result-panel.show { display: block; }
+.result-header {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem; font-weight: 700;
+  color: var(--ink); margin-bottom: 1.5rem;
+}
+.video-player {
+  width: 100%; border-radius: var(--radius2);
+  border: 1px solid var(--border2); margin-bottom: 1.5rem;
+  background: var(--ink); min-height: 280px;
+  display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+}
+.video-player video { width: 100%; border-radius: var(--radius2); display: block; }
+.video-placeholder { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 8px; color: rgba(255,255,255,0.4); font-size: 13px; }
+.spinner { width: 32px; height: 32px; border: 2px solid rgba(255,255,255,0.1); border-top-color: var(--gold-light); border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 6px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.download-btn {
+  display: flex; align-items: center; justify-content: space-between;
+  width: 100%; background: linear-gradient(135deg, var(--saffron), var(--saffron2));
+  color: white; border: none;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem; font-weight: 700;
+  padding: 1rem 1.5rem; border-radius: var(--radius2);
+  cursor: pointer; text-decoration: none; transition: all 0.2s;
+  letter-spacing: 0.03em; box-shadow: 0 4px 16px rgba(200,80,10,0.3);
+  margin-bottom: 0.75rem;
+}
+.download-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(200,80,10,0.4); }
+.download-btn span { font-size: 12px; opacity: 0.8; font-style: italic; font-family: 'Inter', sans-serif; font-weight: 400; }
+.result-actions { display: flex; gap: 10px; margin-top: 1rem; }
+.action-btn {
+  flex: 1; padding: 0.75rem; background: white;
+  border: 1px solid var(--border2); border-radius: var(--radius2);
+  font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 500;
+  color: var(--ink2); cursor: pointer; transition: all 0.18s;
+}
+.action-btn:hover { border-color: var(--saffron); color: var(--saffron); }
+
+/* Error */
+.error-box {
+  display: none; background: #fff8f8;
+  border: 1px solid rgba(180,0,0,0.15); border-radius: var(--radius2);
+  padding: 12px 16px; font-size: 13px; color: #8B0000; margin-top: 1rem;
+}
+.error-box.show { display: block; }
+
+.ornament-divider { text-align: center; color: var(--gold); font-size: 1.2rem; opacity: 0.5; margin: 0.5rem 0 1.5rem; letter-spacing: 0.5em; }
+
+#toast {
+  position: fixed; bottom: 2rem; right: 2rem;
+  background: var(--ink); color: rgba(255,255,255,0.9);
+  border-radius: var(--radius2); padding: 12px 20px;
+  font-size: 13px; font-weight: 500;
+  transform: translateY(60px); opacity: 0;
+  transition: all 0.3s cubic-bezier(0.34,1.56,0.64,1);
+  z-index: 999; border-left: 3px solid var(--gold); max-width: 320px;
+}
+#toast.show { transform: translateY(0); opacity: 1; }
+
+footer {
+  background: var(--ink); padding: 2.5rem 2rem;
+  text-align: center; color: rgba(255,255,255,0.3);
+  font-size: 12px; letter-spacing: 0.04em;
+  border-top: 1px solid rgba(196,146,42,0.15);
+}
+.footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: rgba(255,255,255,0.6); margin-bottom: 0.5rem; }
+
+@media (max-width: 600px) {
+  .hero { padding: 3.5rem 1.25rem 3rem; }
+  .hero-stats { gap: 1.75rem; }
+  .main-wrap { padding: 2rem 1rem 4rem; }
+  .panel { padding: 1.5rem; }
+  .gen-btn { padding: 0.9rem 2rem; font-size: 1.1rem; }
+  nav { padding: 0 1.25rem; }
+}
+@keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+.panel { animation: fadeUp 0.4s ease both; }
+.panel:nth-child(1) { animation-delay: 0.05s; }
+.panel:nth-child(2) { animation-delay: 0.12s; }
+.panel:nth-child(3) { animation-delay: 0.18s; }
+</style>
+</head>
+<body>
+
+<div class="top-border"></div>
+
+<nav>
+  <div class="nav-logo">
+    <span class="om">🕉️</span>
+    <span><strong>Tugeshwar</strong> Maharaj</span>
+  </div>
+  <span class="nav-tag">Divine Avatar · Free</span>
+</nav>
+
+<div class="hero">
+  <div class="hero-pattern"></div>
+  <div class="hero-om">🕉️</div>
+  <div class="hero-badge">✦ AI-Powered Spiritual Avatar</div>
+  <h1><em>Tugeshwar Maharaj</em></h1>
+  <p class="hero-sub">Generate divine talking avatar videos in any language</p>
+  <div class="hero-divider"></div>
+  <div class="hero-stats">
+    <div class="hero-stat"><strong>12+</strong><span>Languages</span></div>
+    <div class="hero-stat"><strong>Free</strong><span>Always</span></div>
+    <div class="hero-stat"><strong>HD</strong><span>Quality</span></div>
+    <div class="hero-stat"><strong>3 Steps</strong><span>Simple</span></div>
+  </div>
+</div>
+
+<div class="main-wrap">
+
+  <!-- STEP 1 -->
+  <div class="panel active">
+    <div class="step-label">Step 01</div>
+    <div class="section-title">Upload Portrait</div>
+    <p class="section-desc">A clear, front-facing photo works best for animation.</p>
+    <div class="upload-area" id="upload-area"
+         onclick="document.getElementById('file-input').click()"
+         ondragover="handleDragOver(event)"
+         ondrop="handleDrop(event)"
+         ondragleave="handleDragLeave()">
+      <div id="upload-placeholder">
+        <div class="upload-icon">🙏</div>
+        <div class="upload-title">Drop a portrait or click to browse</div>
+        <div class="upload-hint">JPG · PNG · WEBP · Max 10 MB</div>
+      </div>
+      <img id="preview-img" alt="Portrait preview" />
+      <div class="img-actions">
+        <button class="img-action-btn" onclick="event.stopPropagation(); document.getElementById('file-input').click()">Change</button>
+        <button class="img-action-btn danger" onclick="event.stopPropagation(); clearPhoto()">Remove</button>
+      </div>
+    </div>
+    <input type="file" id="file-input" accept="image/*" onchange="handleFileSelect(event)">
+    <div class="upload-success" id="upload-success">✓ Photo ready — face detected</div>
+  </div>
+
+  <div class="ornament-divider">✦ ✦ ✦</div>
+
+  <!-- STEP 2 -->
+  <div class="panel">
+    <div class="step-label">Step 02</div>
+    <div class="section-title">Write the Script</div>
+    <p class="section-desc">What should Maharaj say? Write in any language — translation is automatic.</p>
+    <div class="script-prefills">
+      <button class="prefill-btn" onclick="prefill('satsang')">🙏 Satsang</button>
+      <button class="prefill-btn" onclick="prefill('mantra')">🕉️ Mantra</button>
+      <button class="prefill-btn" onclick="prefill('meditation')">🧘 Meditation</button>
+      <button class="prefill-btn" onclick="prefill('karma')">⚖️ Karma</button>
+      <button class="prefill-btn" onclick="prefill('bhakti')">💛 Bhakti</button>
+      <button class="prefill-btn" onclick="prefill('jeevan')">✨ Jeevan</button>
+    </div>
+    <textarea class="script-box" id="script" placeholder="Jai Shri Ram! Aaj ke is pavitra satsang mein…" oninput="updateWordCount()">Jai Shri Ram! Aaj ke is pavitra satsang mein aap sabka swagat hai. Ishwar ki kirpa se hum aaj yahan ikattha hue hain. Prabhu ka naam hi sabse bada sahara hai. Hare Krishna, Hare Ram!</textarea>
+    <div class="script-meta">
+      <span class="script-count" id="word-count">~25 words · ~12s video</span>
+    </div>
+  </div>
+
+  <div class="ornament-divider">✦ ✦ ✦</div>
+
+  <!-- STEP 3 -->
+  <div class="panel">
+    <div class="step-label">Step 03</div>
+    <div class="section-title">Select Language</div>
+    <p class="section-desc">The script will be automatically translated and voiced in this language.</p>
+    <div class="lang-grid">
+      <div class="lang-btn sel" data-code="hi" onclick="selectLang(this)"><span class="flag">🇮🇳</span>Hindi</div>
+      <div class="lang-btn" data-code="en" onclick="selectLang(this)"><span class="flag">🇺🇸</span>English</div>
+      <div class="lang-btn" data-code="mr" onclick="selectLang(this)"><span class="flag">🇮🇳</span>Marathi</div>
+      <div class="lang-btn" data-code="bn" onclick="selectLang(this)"><span class="flag">🇧🇩</span>Bengali</div>
+      <div class="lang-btn" data-code="ta" onclick="selectLang(this)"><span class="flag">🇮🇳</span>Tamil</div>
+      <div class="lang-btn" data-code="te" onclick="selectLang(this)"><span class="flag">🇮🇳</span>Telugu</div>
+      <div class="lang-btn" data-code="gu" onclick="selectLang(this)"><span class="flag">🇮🇳</span>Gujarati</div>
+      <div class="lang-btn" data-code="pa" onclick="selectLang(this)"><span class="flag">🇮🇳</span>Punjabi</div>
+      <div class="lang-btn" data-code="es" onclick="selectLang(this)"><span class="flag">🇪🇸</span>Spanish</div>
+      <div class="lang-btn" data-code="ar" onclick="selectLang(this)"><span class="flag">🇸🇦</span>Arabic</div>
+      <div class="lang-btn" data-code="fr" onclick="selectLang(this)"><span class="flag">🇫🇷</span>French</div>
+      <div class="lang-btn" data-code="zh" onclick="selectLang(this)"><span class="flag">🇨🇳</span>Chinese</div>
+    </div>
+  </div>
+
+  <!-- GENERATE -->
+  <div class="generate-wrap">
+    <div class="error-box" id="error-box"></div>
+    <button class="gen-btn" id="gen-btn" onclick="startGenerate()">
+      🕉️ &nbsp; Generate Avatar Video
+    </button>
+    <div class="gen-note">Free · Powered by D-ID · ~2 min processing</div>
+  </div>
+
+  <!-- PROGRESS -->
+  <div class="progress-panel" id="progress-panel">
+    <div class="prog-title">⏳ Creating your divine video…</div>
+    <div class="prog-bar-track"><div class="prog-bar-fill" id="prog-bar"></div></div>
+    <div class="prog-steps">
+      <div class="prog-step" id="ps-upload"><div class="prog-step-dot"></div>Preparing portrait</div>
+      <div class="prog-step" id="ps-translate"><div class="prog-step-dot"></div>Translating script</div>
+      <div class="prog-step" id="ps-did"><div class="prog-step-dot"></div>Sending to D-ID for animation</div>
+      <div class="prog-step" id="ps-render"><div class="prog-step-dot"></div>Rendering voice & lip sync (~2 min)</div>
+      <div class="prog-step" id="ps-ready"><div class="prog-step-dot"></div>Video ready</div>
+    </div>
+  </div>
+
+  <!-- RESULT -->
+  <div class="result-panel" id="result-panel">
+    <div class="result-header">✦ Your Video is Ready</div>
+    <div class="video-player" id="video-player">
+      <div class="video-placeholder">
+        <div class="spinner"></div>
+        <span>Loading video…</span>
+      </div>
+    </div>
+    <a class="download-btn" id="download-btn" href="#" download="tugeshwar-maharaj.mp4">
+      <span>⬇ &nbsp; Download Video (MP4)</span>
+      <span>Free · Full HD</span>
+    </a>
+    <div class="result-actions">
+      <button class="action-btn" onclick="shareVideo()">📤 Share</button>
+      <button class="action-btn" onclick="resetAll()">↺ Make Another</button>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-logo">🕉️ Tugeshwar Maharaj</div>
+  <div>Divine Avatar Video Generator · Free · Powered by D-ID & MyMemory</div>
+</footer>
+
+<div id="toast"></div>
+
+<script>
+// ── All API calls go to /api/* (Vercel serverless functions) ──
+let photoBase64  = null;
+let photoMime    = null;
+let selectedLang = 'hi';
+
+const SCRIPTS = {
+  satsang:   'Jai Shri Ram! Aaj ke is pavitra satsang mein aap sabka swagat hai. Ishwar ki kirpa se hum aaj yahan ikattha hue hain. Prabhu ka naam hi sabse bada sahara hai. Hare Krishna, Hare Ram!',
+  mantra:    'Om Namah Shivaya — yeh panch akshar ki maha-mantra hain. Har akshar mein ek tattva chhupa hai. Rozana subah aur sham is mantra ka jaap karein. Shiva ki kripa aap par bani rahe. Om Namah Shivaya.',
+  meditation:'Aankhen band karein. Gehri sans lein. Apni saans par dhyan lagaein — andar aur bahar. Har saans ke saath tension chhod dein. Prabhu ki roshni ko apne andar mehsoos karein.',
+  karma:     'Karma ka niyam kehta hai — jo bote ho woh kaatoge. Nek kaam karo, nek vichar rakho. Dusron ki seva mein hi Ishwar ka darshan hota hai.',
+  bhakti:    'Bhakti ek marg hai jo seedha Ishwar tak jaata hai. Bas ek pyar bhari pukaar — Prabhu, main tumhara hoon! Meera ne bhi isi raaste Krishn ko paya.',
+  jeevan:    'Jeevan ek anmol uphaar hai. Sirf aaj, sirf abhi aapka hai. Is pal ko poori shakti se jiyen!'
+};
+
+function prefill(key) {
+  document.getElementById('script').value = SCRIPTS[key];
+  updateWordCount();
+  toast('Script ready — you can edit it');
+}
+
+function updateWordCount() {
+  const text  = document.getElementById('script').value.trim();
+  const words = text ? text.split(/\s+/).length : 0;
+  const secs  = Math.max(8, Math.round(words * 0.45));
+  const m = Math.floor(secs / 60), s = secs % 60;
+  document.getElementById('word-count').textContent =
+    `~${words} words · ~${m > 0 ? m + 'm ' : ''}${s}s video`;
+}
+
+// ── Photo ────────────────────────────────────────────────────
+function handleFileSelect(e) { const f = e.target.files[0]; if (f) processFile(f); }
+function handleDragOver(e)   { e.preventDefault(); document.getElementById('upload-area').classList.add('dragging'); }
+function handleDragLeave()   { document.getElementById('upload-area').classList.remove('dragging'); }
+function handleDrop(e) {
+  e.preventDefault();
+  document.getElementById('upload-area').classList.remove('dragging');
+  const f = e.dataTransfer.files[0];
+  if (f && f.type.startsWith('image/')) processFile(f);
+  else toast('Please drop an image file');
+}
+
+function processFile(file) {
+  if (file.size > 10 * 1024 * 1024) { toast('File too large — max 10 MB'); return; }
+  photoMime = file.type;
+  const reader = new FileReader();
+  reader.onload = ev => {
+    const dataURL = ev.target.result;
+    photoBase64 = dataURL.split(',')[1];
+    document.getElementById('preview-img').src = dataURL;
+    document.getElementById('preview-img').style.display = 'block';
+    document.getElementById('upload-placeholder').style.display = 'none';
+    document.getElementById('upload-area').classList.add('has-image');
+    document.getElementById('upload-success').classList.add('show');
+  };
+  reader.readAsDataURL(file);
+}
+
+function clearPhoto() {
+  photoBase64 = null; photoMime = null;
+  document.getElementById('preview-img').src = '';
+  document.getElementById('preview-img').style.display = 'none';
+  document.getElementById('upload-placeholder').style.display = 'block';
+  document.getElementById('upload-area').classList.remove('has-image');
+  document.getElementById('upload-success').classList.remove('show');
+  document.getElementById('file-input').value = '';
+}
+
+// ── Language ─────────────────────────────────────────────────
+function selectLang(el) {
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('sel'));
+  el.classList.add('sel');
+  selectedLang = el.dataset.code;
+}
+
+// ── Helpers ──────────────────────────────────────────────────
+function setStep(id, state) {
+  const el = document.getElementById(id);
+  el.classList.remove('active', 'done');
+  if (state) el.classList.add(state);
+}
+function setBar(pct) { document.getElementById('prog-bar').style.width = pct + '%'; }
+function sleep(ms)   { return new Promise(r => setTimeout(r, ms)); }
+function showError(msg) {
+  const b = document.getElementById('error-box');
+  b.textContent = msg; b.classList.add('show');
+  setTimeout(() => b.classList.remove('show'), 5000);
+}
+
+// ── MAIN GENERATE ────────────────────────────────────────────
+async function startGenerate() {
+  if (!photoBase64) { showError('⚠️ Please upload a portrait photo first.'); return; }
+  const script = document.getElementById('script').value.trim();
+  if (!script)  { showError('⚠️ Please write a script.'); return; }
+
+  document.getElementById('gen-btn').disabled = true;
+  document.getElementById('progress-panel').classList.add('show');
+  document.getElementById('result-panel').classList.remove('show');
+  document.getElementById('error-box').classList.remove('show');
+  ['ps-upload','ps-translate','ps-did','ps-render','ps-ready'].forEach(id => setStep(id, ''));
+  setBar(0);
+
+  try {
+    // Step 1 — Prepare photo
+    setStep('ps-upload', 'active'); setBar(10);
+    // Use data URL directly — D-ID accepts base64 images
+    const photoUrl = `data:${photoMime};base64,${photoBase64}`;
+    await sleep(600);
+    setStep('ps-upload', 'done'); setBar(22);
+
+    // Step 2 — Translate
+    setStep('ps-translate', 'active'); setBar(32);
+    let finalScript = script;
+    try {
+      const tr = await fetch('/api/translate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text: script, targetLang: selectedLang })
+      });
+      if (tr.ok) {
+        const trData = await tr.json();
+        finalScript = trData.translated || script;
+      }
+    } catch (e) { /* use original */ }
+    setStep('ps-translate', 'done'); setBar(45);
+
+    // Step 3 — Send to D-ID via Vercel API
+    setStep('ps-did', 'active'); setBar(55);
+    const genResp = await fetch('/api/generate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ photoUrl, script: finalScript, language: selectedLang })
+    });
+    if (!genResp.ok) {
+      const err = await genResp.json();
+      throw new Error(err.error || 'Video generation failed');
+    }
+    const { jobId } = await genResp.json();
+    setStep('ps-did', 'done'); setBar(65);
+
+    // Step 4 — Poll for result
+    setStep('ps-render', 'active');
+    const videoUrl = await pollStatus(jobId);
+    setStep('ps-render', 'done'); setBar(90);
+
+    // Step 5 — Done
+    setStep('ps-ready', 'active');
+    await sleep(500);
+    setStep('ps-ready', 'done'); setBar(100);
+
+    showResult(videoUrl);
+
+  } catch (err) {
+    console.error(err);
+    showError('❌ ' + err.message);
+    document.getElementById('gen-btn').disabled = false;
+  }
+}
+
+async function pollStatus(jobId) {
+  for (let i = 0; i < 45; i++) {
+    await sleep(3000);
+    const resp = await fetch(`/api/status?jobId=${jobId}`);
+    const data = await resp.json();
+    if (data.status === 'done' && data.videoUrl) return data.videoUrl;
+    if (data.status === 'error') throw new Error('D-ID rendering failed. Please try again.');
+    setBar(65 + Math.min(22, i * 0.6));
+  }
+  throw new Error('Timed out. D-ID may be slow — please try again.');
+}
+
+function showResult(videoUrl) {
+  document.getElementById('progress-panel').classList.remove('show');
+  document.getElementById('result-panel').classList.add('show');
+  document.getElementById('gen-btn').disabled = false;
+  document.getElementById('video-player').innerHTML =
+    `<video controls autoplay src="${videoUrl}" style="width:100%;border-radius:3px;display:block;"></video>`;
+  document.getElementById('download-btn').href = videoUrl;
+  toast('🎉 Video ready! Download below.');
+  document.getElementById('result-panel').scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+function shareVideo() {
+  if (navigator.share) navigator.share({ title: 'Tugeshwar Maharaj', url: window.location.href });
+  else { navigator.clipboard.writeText(window.location.href); toast('🔗 Link copied!'); }
+}
+
+function resetAll() {
+  document.getElementById('result-panel').classList.remove('show');
+  document.getElementById('progress-panel').classList.remove('show');
+  setBar(0);
+  ['ps-upload','ps-translate','ps-did','ps-render','ps-ready'].forEach(id => setStep(id, ''));
+  document.getElementById('gen-btn').disabled = false;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(window._tt);
+  window._tt = setTimeout(() => t.classList.remove('show'), 3000);
+}
+
+updateWordCount();
+</script>
+</body>
+</html>
