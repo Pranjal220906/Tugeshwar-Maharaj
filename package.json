@@ -1,0 +1,6 @@
+{
+  "name": "tugeshwar-maharaj",
+  "version": "1.0.0",
+  "description": "Tugeshwar Maharaj — Divine Avatar Video Generator",
+  "engines": { "node": "18.x" }
+}
